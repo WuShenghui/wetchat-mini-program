@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strictNullChecks": true,
+    "downlevelIteration": true,
+    "noImplicitAny": false,
+    "strict": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "baseUrl": "./src/",
+    "outDir": "./dist/",
+    "noImplicitThis": false,
+    "removeComments": true,
+    "lib": [
+      "es5",
+      "es2015",
+      "es2016",
+      "es2017",
+      "es2015.promise",
+      "es2015.collection",
+      "es2015.iterable",
+      "es2015.core",
+      "dom"
+    ],
+    "paths": {
+      "@/*": ["./*"],
+      "@Services/*": ["./services/*"],
+      "@Utils/*": ["./utils/*"],
+      "@Config/*": ["./config/*"]
+    }
+  },
+  "awesomeTypescriptLoaderOptions": {},
+  "declaration": true,
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ]
+}

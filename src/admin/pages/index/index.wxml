@@ -1,0 +1,9 @@
+<!-- index.wxml -->
+<view class="container">
+	<view class="userinfo">管理端</view>
+	<view class="usermotto">
+		<image style="width: 259px; height: 194px;" src="{{src}}" />
+		<text class="user-motto">{{motto}}</text>
+	</view>
+</view>
+
