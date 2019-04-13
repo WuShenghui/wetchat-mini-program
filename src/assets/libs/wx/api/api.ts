@@ -1,5 +1,5 @@
-import utils from '@/assets/libs/utils';
-import { wxPromise } from '@/assets/libs/wx/utils';
+import utils from '@libs/utils';
+import { wxPromise } from '@libs/wx/utils';
 
 const linkTo = ({
   url,

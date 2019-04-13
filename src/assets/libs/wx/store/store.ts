@@ -1,4 +1,4 @@
-import utils from '@/assets/libs/utils';
+import utils from '@libs/utils';
 
 function checkRepeatFunc(modules) {
   const funcName: string[] = [];

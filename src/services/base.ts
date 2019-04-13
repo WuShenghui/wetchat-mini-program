@@ -1,5 +1,5 @@
-import utils from '@/assets/libs/utils';
-import { HttpClient } from '@/assets/libs/wx/httpClient';
+import utils from '@/utils';
+import { HttpClient } from '@libs/wx/httpClient';
 
 export class BaseService extends HttpClient {
   constructor(prefix: string, apis: IApi.module = {}) {

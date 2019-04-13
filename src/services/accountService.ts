@@ -1,6 +1,6 @@
 
-import account from '@Config/API/account';
-import { Service } from '@Services/index';
+import account from '@/config/api/account';
+import { Service } from '@services/index';
 
 const accountService: any = new Service(account);
 

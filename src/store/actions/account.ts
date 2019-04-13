@@ -1,4 +1,4 @@
-import accountService from '@Services/accountService';
+import accountService from '@services/accountService';
 
 export default {
   async login(state: any): Promise<any> {

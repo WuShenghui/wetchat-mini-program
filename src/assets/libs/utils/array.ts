@@ -1,6 +1,6 @@
 export default {
   /**
-   * 将数组按照chunklen大小进行分段
+   * 将数组按照 chunklen 大小进行分段
    * @param sourceArr Array
    * @param chunkLen number
    */

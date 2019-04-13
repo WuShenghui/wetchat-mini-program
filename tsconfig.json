@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "module": "es6",
+    "moduleResolution": "node",
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "strictNullChecks": true,
@@ -24,11 +25,15 @@
       "es2015.core",
       "dom"
     ],
+    "typeRoots" : [
+      "typings"
+    ],
     "paths": {
       "@/*": ["./*"],
-      "@Services/*": ["./services/*"],
-      "@Utils/*": ["./utils/*"],
-      "@Config/*": ["./config/*"]
+      "@services/*": ["./services/*"],
+      "@utils/*": ["./utils/*"],
+      "@config/*": ["./config/*"],
+      "@libs/*": ["./assets/libs/*"]
     }
   },
   "awesomeTypescriptLoaderOptions": {},

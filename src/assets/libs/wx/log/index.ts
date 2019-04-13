@@ -1,5 +1,5 @@
 
-import { MissingError } from '@/assets/libs/wx/utils';
+import { MissingError } from '@libs/wx/utils';
 // tslint:disable-next-line:import-name
 import ApiLog from './apiLog';
 
@@ -20,7 +20,7 @@ export class Log {
   pageLog: any[] = []; // page event log
   appLog: ApiLog[] = []; // app event log
 
-  private requestUrl: string = 'https://app.pinquest.cn/api/oss/Report';
+  private requestUrl: string = 'https://app.xxxx.cn/api/oss/Report';
 
   constructor({ wxAppId, version, ...options }: wxLog.ILoggerOptions) {
     if (!wxAppId || !version) {

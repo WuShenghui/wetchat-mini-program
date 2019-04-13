@@ -1,5 +1,5 @@
 
-import { MissingError } from '@/assets/libs/wx/utils';
+import { MissingError } from '@libs/wx/utils';
 
 export default class ApiLog {
   method: string = '';

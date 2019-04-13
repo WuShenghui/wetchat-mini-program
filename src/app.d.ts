@@ -1,4 +1,4 @@
-/// <reference path="./libs/typings/wx/lib.wx.app.d.ts" />
+/// <reference path="./assets/libs/typings/wx/lib.wx.app.d.ts" />
 
 declare interface requestLock {
   status: boolean;

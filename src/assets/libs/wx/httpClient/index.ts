@@ -1,5 +1,5 @@
-import apiLog, { createApiLog } from '@/assets/libs/wx/log/apiLog';
-import { strFormat, wxPromise } from '@/assets/libs/wx/utils';
+import apiLog, { createApiLog } from '@libs/wx/log/apiLog';
+import { strFormat, wxPromise } from '@libs/wx/utils';
 
 type IFunction = (_: any) => any;
 

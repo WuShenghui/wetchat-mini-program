@@ -1,4 +1,4 @@
-import route from '@Config/route';
+import route from '@config/route';
 
 const app = getApp();
 

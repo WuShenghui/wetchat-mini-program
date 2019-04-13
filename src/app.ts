@@ -1,7 +1,7 @@
 import { Conf } from '@/config';
-import { createWxApi } from '@/assets/libs/wx/api';
-import { createLogger } from '@/assets/libs/wx/log';
-import { createStore } from '@/assets/libs/wx/store';
+import { createWxApi } from '@libs/wx/api';
+import { createLogger } from '@libs/wx/log';
+import { createStore } from '@libs/wx/store';
 import store from '@/store';
 
 App({

@@ -1,5 +1,5 @@
-import { Conf } from '@Config/index';
-import { BaseService } from '@Services/BASE_SERVICE';
+import { Conf } from '@config/index';
+import { BaseService } from '@/services/base';
 
 export class Service extends BaseService {
   constructor(apis) {
