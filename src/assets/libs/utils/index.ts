@@ -17,23 +17,14 @@ export default {
    *  const newObj = deepClone(obj);
    */
   deepClone(obj) {
-    if (!obj) {
+    if (!(obj && typeof obj === 'object')) {
       return obj;
     }
 
-    const clone: {} | [] = {};
+    const clone = Array.isArray(obj) ? [] : {};
     Object.keys(obj).forEach(
-      key =>
-        (clone[key] =
-          typeof obj[key] === 'object' ? this.deepClone(obj[key]) : obj[key])
+      key => (clone[key] = typeof obj[key] === 'object' ? this.deepClone(obj[key]) : obj[key]),
     );
-
-    if (Array.isArray(obj)) {
-      // tslint:disable-next-line:prefer-array-literal
-      (clone as Array<any>).length = obj.length;
-      // tslint:disable-next-line:prefer-array-literal
-      return Array.from(clone as Array<any>);
-    }
 
     return clone;
   },
@@ -84,5 +75,32 @@ export default {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => fn.apply(thisArg, args), ms);
     };
+  },
+
+  /**
+   * 带参数返回返回上一页面
+   * @param data 参数
+   * @param delta 参数
+   */
+  navigateBackWithData(data, delta = 1) {
+    const pages = getCurrentPages();
+    if (pages.length - 1 >= delta) {
+      const prevPage = pages[pages.length - 1 - delta];
+      prevPage.data = data;
+    }
+    wx.navigateBack({ delta });
+  },
+
+  /**
+   * 在使用 navigateBackWithData 返回当前页面时，获取页面参数
+   */
+  getCurrentPageData() {
+    const pages = getCurrentPages();
+    if (pages.length > 0) {
+      const currPage = pages[pages.length - 1];
+
+      return currPage.data;
+    }
+    return null;
   }
 };
