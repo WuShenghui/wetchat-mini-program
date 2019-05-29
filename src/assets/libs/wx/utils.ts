@@ -19,7 +19,7 @@ export function wxPromise(func: (_: any) => void) {
  * @param args eg： { name："123" }
  */
 export const strFormat = (str: string = '', args: any = {}): string => {
-  let result = '';
+  let result = str;
   for (const key in args) {
     const reg = new RegExp(`({${key}})`, 'g');
     result = str.replace(reg, args[key]);
